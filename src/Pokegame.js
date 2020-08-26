@@ -19,8 +19,8 @@ class Pokegame extends Component {
     let team2 = [...this.props.pokemon];
     while (team1.length < team2.length) {
       let randomIdx = Math.floor(Math.random() * team2.length);
-      let randomPokemon = team2.splice(randomIdx, 1);
-      team1.push[randomPokemon];
+      let randomPokemon = team2.splice(randomIdx, 1)[0];
+      team1.push(randomPokemon);
     }
     console.log(team1);
     console.log(team2);
